@@ -37,3 +37,7 @@ hitung_akar(1, -4, 4)
 # SKENARIO 3 
 print("SKENARIO 3")
 hitung_akar(1, 2, 5)
+
+# SKENARIO 4
+print("SKENARIO 4")
+hitung_akar(3, 5, 7)
