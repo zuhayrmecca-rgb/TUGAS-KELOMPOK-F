@@ -41,3 +41,6 @@ interval(0.7, 0.10, 50)
 
 # SKENARIO 3 
 interval(1.5, 0.05, 100)
+
+# SKENARIO 4
+interval(1, 0.10, 50)
