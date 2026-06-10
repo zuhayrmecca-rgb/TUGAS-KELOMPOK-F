@@ -58,3 +58,7 @@ olah_nip("199903272025062013")
 # SKENARIO 3 
 print("SKENARIO 3")
 olah_nip("1993")
+
+# SKENARIO 4
+print("SKENARIO 4")
+olah_nip("199313212019031010")
