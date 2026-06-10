@@ -15,6 +15,7 @@ hitung <- function(teks) {
   cat("STATUS: VALID\n")
   cat("Jumlah kata:", jml_kata, "\n")
   cat("Jumlah kalimat:", jml_kalimat, "\n")
+  cat("Teks tersebut memuat",jml_kalimat,"kalimat dan memuat",jml_kata,"kata.\n")
 }
 # PENGUJIAN
 #SKENARIO 1 
