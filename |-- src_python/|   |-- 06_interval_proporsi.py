@@ -50,4 +50,4 @@ interval(1.5, 0.05, 100)
 
 #SKENARIO 4
 print("SKENARIO 4")
-interval(1, 0.10, 50)
+interval(0.8, 0.10, 50)
