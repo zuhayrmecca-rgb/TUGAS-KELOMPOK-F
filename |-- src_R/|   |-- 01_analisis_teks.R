@@ -28,3 +28,7 @@ hitung(teks2)
 #SKENARIO 3 
 teks3 <-"Hari ini cuaca sangat cerah dan matahari bersinar terang angin bertiup sepoi-sepoi membuat suasana menjadi lebih nyaman untuk beraktivitas di luar ruangan"
 hitung(teks3)
+
+#Skenario 4
+teks4 <- "Menjaga kesehatan tubuh sangat penting bagi setiap orang. Olahraga secara teratur dapat meningkatkan sistem kekebalan tubuh. Selain itu, konsumsi makanan bergizi juga berperan besar dalam menjaga kesehatan. Tidur yang cukup setiap hari juga tidak kalah pentingnya."
+hitung(teks4) 
