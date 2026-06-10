@@ -42,3 +42,7 @@ cluster(1, -4, 6)
 #SKENARIO 3 (Titik U: a, b, c)
 print("SKENARIO 3")
 cluster("a", "b", "c")
+
+#SKENARIO 4 (Titik U: 1, b, 5)
+print ("SKENARIO 4")
+cluster(1, "b", 5)
