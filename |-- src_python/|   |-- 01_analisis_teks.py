@@ -19,6 +19,7 @@ def hitung(teks):
     print("STATUS: VALID")
     print(f"Jumlah kata: {jml_kata}")
     print(f"Jumlah kalimat: {jml_kalimat}")
+    print(f"Teks tersebut memuat: {jml_kalimat} kalimat dan memuat: {jml_kata} kata")
 
 
 # SKENARIO 1
