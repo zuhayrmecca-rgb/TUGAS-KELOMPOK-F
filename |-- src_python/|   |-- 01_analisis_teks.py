@@ -1,14 +1,24 @@
-# PROGRAM 1
+# PROGRAM 1: ANALISIS TEKS
+
 # Fungsi untuk menghitung kata dan kalimat
 def hitung(teks_input):
+    # Validasi: teks kosong atau tidak ada titik
     if teks_input == "" or "." not in teks_input:
         print("STATUS: TIDAK VALID")
         return
-
+    
+    # Menghitung kata: pecah berdasarkan spasi
     kata_list = teks_input.split()
+    # Hapus elemen kosong (jika ada spasi ganda)
+    kata_list = [kata for kata in kata_list if kata != ""]
     jumlah_kata = len(kata_list)
-    jumlah_kalimat = teks_input.count('.')
-
+    
+    # Menghitung kalimat: pecah berdasarkan titik
+    kalimat_list = teks_input.split(".")
+    # Hapus elemen kosong (jika ada titik ganda)
+    kalimat_list = [kalimat for kalimat in kalimat_list if kalimat != ""]
+    jumlah_kalimat = len(kalimat_list)
+    
     print("STATUS: VALID")
     print(f"Jumlah kata: {jumlah_kata}")
     print(f"Jumlah kalimat: {jumlah_kalimat}")
