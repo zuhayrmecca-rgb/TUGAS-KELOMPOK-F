@@ -2,7 +2,7 @@
 # FUNGSI
 interval <- function(p, alpha, n) {
   # Validasi proporsi (sesuai soal: < 0 atau > 1)
-  if (p < 0 || p > 1) {
+  if (p <= 0 || p >= 1) {
     cat("STATUS: TIDAK VALID - Proporsi harus antara 0 dan 1\n")
     return()
   }
@@ -42,5 +42,5 @@ interval(0.7, 0.10, 50)
 # SKENARIO 3 
 interval(1.5, 0.05, 100)
 
-# SKENARIO 4
-interval(0.8, 0.10, 50)
+#SKENARIO 4
+interval(0.8,0.10,50)
