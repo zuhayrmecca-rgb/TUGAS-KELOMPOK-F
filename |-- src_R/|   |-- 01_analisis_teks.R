@@ -1,16 +1,23 @@
 # PROGRAM 1: ANALISIS TEKS
 # FUNGSI 
 hitung <- function(teks) {
+# Validasi: teks kosong atau tidak ada titik (escape karena regex)
   if (teks == "" || !grepl("\\.", teks)) {
     cat("STATUS: TIDAK VALID\n")
     return()
   }
+  
+# Pecah teks berdasarkan spasi, unlist() karena strsplit() menghasilkan list
   kata <- unlist(strsplit(teks, "\\s+"))
-  kata <- kata[kata != ""]
-  jumlah_kata <- length(kata)
+  kata <- kata[kata != ""]  # Hapus elemen kosong
+  jumlah_kata <- length(kata)   # Hitung jumlah kata
+  
+# Pecah teks berdasarkan titik (escape), lalu ubah ke vektor
   kalimat <- unlist(strsplit(teks, "\\."))
-  kalimat <- kalimat[kalimat != ""]
-  jumlah_kalimat <- length(kalimat)
+  kalimat <- kalimat[kalimat != ""]  # Hapus elemen kosong (akibat titik di akhir)
+  jumlah_kalimat <- length(kalimat)  # Hitung jumlah kalimat
+
+# Tampilkan hasil
   cat("STATUS : VALID","\n")
   cat("Jumlah kata:", jumlah_kata, "\n")
   cat("Jumlah kalimat:", jumlah_kalimat, "\n")
